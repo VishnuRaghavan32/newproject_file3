@@ -20,9 +20,8 @@ st.subheader("Pairplot")
 sns.pairplot(titan,hue='Fare',palette='rainbow')
 st.pyplot()
 
-gender=titan.groupby('Sex')
 st.subheader("Displot")
-sns.displot(tips['gender'])
+sns.displot(titan['Sex'])
 st.pyplot()
 
 st.subheader("Catplot")
